@@ -140,7 +140,7 @@ class _BookingScreenState extends State<BookingScreen> {
                   context: context,
                   initialDate: DateTime.now(),
                   firstDate: DateTime.now(),
-                  lastDate: DateTime(2025, 12, 31),
+                  lastDate: DateTime(2027, 12, 31),
                 );
                 if (picked != null) {
                   setState(() => selectedDate = picked);
