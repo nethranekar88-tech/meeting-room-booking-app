@@ -134,16 +134,25 @@ class _BookingScreenState extends State<BookingScreen> {
               icon: const Icon(Icons.calendar_today),
               label: Text(selectedDate == null
                   ? 'Pick a Date'
-                  : selectedDate.toString().split(' ')[0]),
+                  : 'Date: ${selectedDate.toString().split(' ')[0]}'),
               onPressed: () async {
-                final picked = await showDatePicker(
-                  context: context,
-                  initialDate: DateTime.now(),
-                  firstDate: DateTime.now(),
-                  lastDate: DateTime(2027, 12, 31),
-                );
-                if (picked != null) {
-                  setState(() => selectedDate = picked);
+                try {
+                  final DateTime? picked = await showDatePicker(
+                    context: context,
+                    initialDate: DateTime.now(),
+                    firstDate: DateTime.now(),
+                    lastDate: DateTime(2027, 12, 31),
+                  );
+                  if (picked != null) {
+                    setState(() {
+                      selectedDate = picked;
+                    });
+                  }
+                } catch (e) {
+                  if (!mounted) return;
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Date picker error: $e')),
+                  );
                 }
               },
             ),
