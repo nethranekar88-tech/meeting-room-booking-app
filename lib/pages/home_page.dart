@@ -136,7 +136,7 @@ class _HomePageState extends State<HomePage> {
                 border: OutlineInputBorder(),
               ),
             ),
-            const SizedBox(height: 15),
+            const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () async {
                 DateTime? picked = await showDatePicker(
@@ -152,32 +152,66 @@ class _HomePageState extends State<HomePage> {
                   });
                 }
               },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
               child: Text(
                 selectedDate == null
                     ? "Pick a Date"
                     : "${selectedDate!.day}/${selectedDate!.month}/${selectedDate!.year}",
+                style: TextStyle(fontSize: 16, color: Colors.white),
               ),
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 16),
             ElevatedButton(
               onPressed: pickStartTime,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
               child: Text(
                 startTime.isEmpty ? "Start Time" : "Start: $startTime",
+                style: TextStyle(fontSize: 16, color: Colors.white),
               ),
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 16),
             ElevatedButton(
               onPressed: pickEndTime,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
               child: Text(
                 endTime.isEmpty ? "End Time" : "End: $endTime",
+                style: TextStyle(fontSize: 16, color: Colors.white),
               ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 16),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: bookRoom,
-                child: const Text("Book Room"),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+                child: const Text(
+                  "Book Now",
+                  style: TextStyle(fontSize: 16, color: Colors.white),
+                ),
               ),
             ),
             const SizedBox(height: 30),

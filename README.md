@@ -1,53 +1,53 @@
-# Meeting Room Booking App
+# 📅 Meeting Room Booking App (Flutter)
 
-A professional Flutter application for booking meeting rooms with Firebase backend.
+A simple and user-friendly mobile application built using Flutter that allows users to book meeting rooms easily by selecting available time slots.
 
-## 🎯 Features
+---
 
-- ✅ **Firebase Authentication** - Email/Password Login & Registration
-- ✅ **Meeting Room Selection** - Choose from 4 available rooms
-- ✅ **Date Picker System** - Intuitive date selection
-- ✅ **Time Slot Booking** - Select start and end times
-- ✅ **Double Booking Prevention** - Real-time validation to prevent conflicts
-- ✅ **Live Booking List** - Real-time updates from Firestore
-- ✅ **Delete Bookings** - Remove reservations instantly
-- ✅ **Admin Dashboard** - Separate admin interface
-- ✅ **Role-Based Navigation** - Users directed based on role
-- ✅ **Responsive UI** - Clean Material Design
+## 🚀 Features
 
-## Screenshots
-### Login Screen
-![Login](screenshots/login.png)
-### Booking Screen
-![Booking](screenshots/booking.png)
-### Live Bookings
-![Live Bookings](screenshots/live_bookings.png)
+- 🏢 View available meeting rooms
+- ⏰ Select date and time slots
+- ✅ Book rooms instantly
+- 📱 Clean and simple UI
+- 🔄 Real-time booking updates (if Firebase used)
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Flutter, Dart
-- **Backend**: Firebase Cloud Platform
-- **Database**: Cloud Firestore (Real-time NoSQL)
-- **Authentication**: Firebase Authentication
-- **Platforms**: Android, iOS, Web, Windows
-- **UI Framework**: Material Design 3
+- Flutter
+- Dart
+- Firebase (if used)
 
-## 📱 App Flow
+---
 
-### User Booking Process
-1. Login with Firebase email/password
-2. Select a meeting room from dropdown
-3. Click "Pick a Date" to open calendar
-4. Choose date (must be today or future)
-5. Select start time
-6. Select end time
-7. Click "Book Room"
-8. Booking appears instantly in Live Bookings list
-9. Delete bookings with trash icon anytime
+## 📸 Screenshots
 
-### Admin Process
-- Login with admin account
-- Sees Admin Dashboard instead of booking page
+![Home](assets/images/home.png)
+![Booking](assets/images/booking.png)
+![Confirm](assets/images/confirm.png)
+
+---
+
+## 🎯 Project Goal
+
+The goal of this project is to simplify meeting room booking in offices and organizations by providing a quick and easy mobile solution.
+
+---
+
+## 🔮 Future Improvements
+
+- Admin panel for managing rooms
+- Push notifications
+- Booking history
+- User authentication
+
+---
+
+## 👩‍💻 Developed By
+
+Nethra – Flutter & FlutterFlow Developer
 - Admin can still manage bookings from user interface
 - Logout button in top-right corner
 

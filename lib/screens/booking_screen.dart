@@ -128,13 +128,9 @@ class _BookingScreenState extends State<BookingScreen> {
                 border: OutlineInputBorder(),
               ),
             ),
-            const SizedBox(height: 15),
+            const SizedBox(height: 16),
             // Date Picker
-            ElevatedButton.icon(
-              icon: const Icon(Icons.calendar_today),
-              label: Text(selectedDate == null
-                  ? 'Pick a Date'
-                  : 'Date: ${selectedDate.toString().split(' ')[0]}'),
+            ElevatedButton(
               onPressed: () async {
                 try {
                   final DateTime? picked = await showDatePicker(
@@ -155,14 +151,23 @@ class _BookingScreenState extends State<BookingScreen> {
                   );
                 }
               },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              child: Text(
+                selectedDate == null
+                    ? 'Pick a Date'
+                    : 'Date: ${selectedDate.toString().split(' ')[0]}',
+                style: TextStyle(fontSize: 16, color: Colors.white),
+              ),
             ),
-            const SizedBox(height: 15),
+            const SizedBox(height: 16),
             // Time Picker
-            ElevatedButton.icon(
-              icon: const Icon(Icons.access_time),
-              label: Text(selectedTime == null
-                  ? 'Pick a Time'
-                  : selectedTime!.format(context)),
+            ElevatedButton(
               onPressed: () async {
                 final picked = await showTimePicker(
                   context: context,
@@ -172,13 +177,36 @@ class _BookingScreenState extends State<BookingScreen> {
                   setState(() => selectedTime = picked);
                 }
               },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              child: Text(
+                selectedTime == null
+                    ? 'Pick a Time'
+                    : selectedTime!.format(context),
+                style: TextStyle(fontSize: 16, color: Colors.white),
+              ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 16),
             ElevatedButton(
               onPressed: _isLoading ? null : bookRoom,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
               child: _isLoading
                   ? const CircularProgressIndicator()
-                  : const Text('Book Room'),
+                  : const Text(
+                      'Book Now',
+                      style: TextStyle(fontSize: 16, color: Colors.white),
+                    ),
             ),
             const SizedBox(height: 20),
             const Divider(),
