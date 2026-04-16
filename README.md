@@ -272,7 +272,7 @@ flutter build apk
 
 ## 📞 Support
 
-Report issues on GitHub: https://github.com/yourname/meeting-room-booking-app/issues
+Report issues on GitHub: https://github.com/nethranekar88-tech/meeting-room-booking-app/issues
 
 ## 📄 License
 
