@@ -23,13 +23,13 @@ A modern mobile app built with Flutter and Firebase for booking meeting rooms wi
 ## Screenshots
 
 ### Login Page
-![Login Page](assets/images/login_page.png)
+![Login Page](screenshots/login_page.png)
 
 ### Home Screen
-![Home Screen](assets/images/home_screen.png)
+![Home Screen](screenshots/home_screen.png)
 
 ### Booking Success
-![Booking Success](assets/images/booking_success.png)
+![Booking Success](screenshots/booking_success.png)
 
 ### Profile Page
 ![Profile Page](assets/images/profile_page.png)
