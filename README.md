@@ -30,16 +30,16 @@ A Flutter + Firebase meeting room booking application with login, room booking, 
 ## Screenshots
 
 ### Login Page
-![Login Page](screenshots/login_page.png)
+![Login Page](assets/images/login_page.png)
 
 ### Home Screen
-![Home Screen](screenshots/home_screen.png)
+![Home Screen](assets/images/home_screen.png)
 
 ### Booking Success
-![Booking Success](screenshots/booking_success.png)
+![Booking Success](assets/images/booking_success.png)
 
 ### Profile Page
-![Profile Page](screenshots/profile_page.png)
+![Profile Page](assets/images/profile_page.png)
 
 ---
 
