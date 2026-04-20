@@ -426,7 +426,8 @@ class _BookingScreenState extends State<BookingScreen> {
           AspectRatio(
             aspectRatio: 16 / 6,
             child: ClipRRect(
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
+              borderRadius:
+                  const BorderRadius.vertical(top: Radius.circular(24)),
               child: Image.network(
                 room["image"],
                 width: double.infinity,
