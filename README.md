@@ -1,4 +1,4 @@
-﻿# Meeting Room Booking Flutter App
+# Meeting Room Booking Flutter App
 
 A Flutter + Firebase meeting room booking application with login, room booking, booking history, profile dashboard, and modern responsive UI.
 
