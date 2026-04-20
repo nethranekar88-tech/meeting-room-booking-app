@@ -1,4 +1,5 @@
-# Meeting Room Booking Flutter App
+Flutter + Firebase Meeting Room Booking Application with login, room booking, booking history, responsive UI, and profile dashboard.
+# meeting-room-booking-flutter-app
 
 A modern mobile app built with Flutter and Firebase for booking meeting rooms with a premium UI.
 
@@ -19,6 +20,9 @@ A modern mobile app built with Flutter and Firebase for booking meeting rooms wi
 - Cloud Firestore
 
 ## Screenshots
+
+### login Page
+![login page](assets/images/login_page.png)
 
 ### Home Screen
 ![Home Screen](assets/images/home_screen.png)
@@ -308,7 +312,11 @@ MIT License - Feel free to use in your projects
 ---
 
 **Built with ❤️ using Flutter & Firebase**
+## Developer
 
-*Last Updated: March 2026*
+Nethra Nekar
+
+- LinkedIn: linkedin.com/in/nethra-nekar-ab2494259/
+- GitHub: github.com/nethranekar88-tech
 
 
