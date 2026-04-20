@@ -1,31 +1,22 @@
-﻿# Meeting Room Booking Flutter App
+﻿# meeting-room-booking-flutter-app
 
-A Flutter + Firebase meeting room booking application with login, room booking, booking history, profile dashboard, and modern responsive UI.
-
----
+A Flutter + Firebase meeting room booking application with login, booking flow, profile dashboard, and modern responsive UI.
 
 ## Features
 
-- User Login & Signup
-- Firebase Authentication
-- Book meeting rooms by selecting date and time
-- Store and retrieve bookings from Cloud Firestore
+- Login / Signup with Firebase Authentication
+- Book meeting rooms by date and time
 - My Bookings page
-- Profile page with booking statistics
-- Responsive design for web and mobile
-- Modern UI with clean card layout and success popup
-
----
+- Profile page with total bookings and logout
+- Real-time Firestore integration
+- Responsive modern UI for web/mobile
 
 ## Tech Stack
 
 - Flutter
 - Dart
-- Firebase Authentication
+- Firebase Auth
 - Cloud Firestore
-- Material Design
-
----
 
 ## Screenshots
 
@@ -41,52 +32,31 @@ A Flutter + Firebase meeting room booking application with login, room booking, 
 ### Profile Page
 ![Profile Page](assets/images/profile_page.png)
 
----
-
 ## Project Use Case
 
-This application can be used for:
-
-- Offices and corporate teams
-- Coworking spaces
-- Schools and colleges
-- Meeting room management systems
-- Internal business booking systems
-
----
+This app is suitable for:
+- offices
+- coworking spaces
+- institutions
+- admin booking systems
 
 ## Live Skills Demonstrated
 
-- Flutter UI development
-- Firebase Authentication integration
-- Cloud Firestore database integration
-- Responsive layout building
-- State management and navigation
-- Professional app design and user experience
-
----
+- Flutter UI design
+- Firebase integration
+- authentication flow
+- real-time database usage
+- responsive layout building
 
 ## Freelance Availability
 
-I am available for freelance projects related to:
+I am available for freelance Flutter app projects, booking systems, admin apps, and business mobile apps.
 
-- Flutter mobile app development
-- Firebase integration
-- Booking systems
-- Admin dashboards
-- Business applications
-- Travel and event booking apps
+## Connect with me
 
----
-
-## Connect With Me
-
-- LinkedIn: linkedin.com/in/nethra-nekar-ab2494259/
-- GitHub: github.com/nethranekar88-tech
-- Fiverr: fiverr.com/users/nethranekar22
-
----
+- LinkedIn: https://www.linkedin.com/in/nethra-nekar-ab2494259/
+- Fiverr: https://www.fiverr.com/users/nethranekar22/seller_dashboard
 
 ## Author
 
-**Nethra Nekar**
+Nethra Nekar
