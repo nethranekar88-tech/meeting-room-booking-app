@@ -1,5 +1,6 @@
-Flutter + Firebase Meeting Room Booking Application with login, room booking, booking history, responsive UI, and profile dashboard.
 # meeting-room-booking-flutter-app
+
+A Flutter + Firebase meeting room booking application with login, booking flow, profile dashboard, and modern responsive UI.
 
 A modern mobile app built with Flutter and Firebase for booking meeting rooms with a premium UI.
 
@@ -71,13 +72,20 @@ lib/
 ├── main.dart                      # App entry point
 ├── firebase_options.dart          # Firebase config
 │
-├── screens/
-│   ├── login_screen.dart          # Login & role checking
-│   ├── register_screen.dart       # User registration
-│   └── admin_dashboard.dart       # Admin interface
+├── screens/                       # Main app screens and navigation layouts
+│   ├── login_screen.dart          # Login screen
+│   ├── register_screen.dart       # Signup screen
+│   ├── booking_screen.dart        # Main room booking flow
+│   ├── dashboard_screen.dart      # User/overview dashboard
+│   ├── admin_dashboard.dart       # Admin interface and controls
+│   ├── manage_rooms_screen.dart   # Room management screen
+│   └── all_bookings_screen.dart   # Full bookings list view
 │
-├── pages/
-│   └── home_page.dart             # Booking page
+├── pages/                         # Reusable page widgets used inside screens
+│   ├── home_page.dart             # Home booking page widget
+│   ├── login_page.dart            # Login page widget
+│   ├── my_bookings_page.dart      # My bookings list page
+│   └── profile_page.dart          # Profile page widget
 │
 ├── models/
 │   └── booking.dart               # Booking data model
@@ -85,6 +93,12 @@ lib/
 └── services/
     └── firestore_service.dart     # Database operations
 ```
+
+### Why there are extra screens
+- `screens/` contains the main flows for login, registration, booking, dashboard, and admin features.
+- `pages/` contains reusable page widgets such as the profile page and bookings page.
+- Your main end-user screenshot flow is: Login → Home → Booking Success → Profile.
+- Other files like `register_screen.dart`, `admin_dashboard.dart`, and `manage_rooms_screen.dart` are additional app features and do not affect your primary demo flow.
 
 ## 🚀 Getting Started
 
