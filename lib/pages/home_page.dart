@@ -52,6 +52,8 @@ class _HomePageState extends State<HomePage> {
       return;
     }
 
+    final scaffoldMessenger = ScaffoldMessenger.of(context);
+
     // Format date for Firestore
     final dateStr = "${selectedDate!.day}/${selectedDate!.month}/${selectedDate!.year}";
 
@@ -64,7 +66,7 @@ class _HomePageState extends State<HomePage> {
 
     if (existingBookings.docs.isNotEmpty) {
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
+      scaffoldMessenger.showSnackBar(
         const SnackBar(content: Text("Room already booked for this date!")),
       );
       return;
@@ -86,7 +88,7 @@ class _HomePageState extends State<HomePage> {
       endTime = "";
     });
 
-    ScaffoldMessenger.of(context).showSnackBar(
+    scaffoldMessenger.showSnackBar(
       const SnackBar(content: Text("Room booked successfully!")),
     );
   }
@@ -101,9 +103,10 @@ class _HomePageState extends State<HomePage> {
           IconButton(
             icon: const Icon(Icons.logout),
             onPressed: () async {
+              final navigator = Navigator.of(context);
               await FirebaseAuth.instance.signOut();
               if (!mounted) return;
-              Navigator.pushReplacementNamed(context, "/login");
+              navigator.pushReplacementNamed('/login');
             },
           ),
         ],

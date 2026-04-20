@@ -1,53 +1,62 @@
-# 📅 Meeting Room Booking App (Flutter)
+# Meeting Room Booking Flutter App
 
-A simple and user-friendly mobile application built using Flutter that allows users to book meeting rooms easily by selecting available time slots.
+A modern mobile app built with Flutter and Firebase for booking meeting rooms with a premium UI.
 
----
+## Features
 
-## 🚀 Features
+- Login / Signup with Firebase Authentication
+- Book meeting rooms by date and time
+- My Bookings page
+- Profile page with total bookings and logout
+- Real-time Firestore integration
+- Responsive modern UI for web/mobile
 
-- 🏢 View available meeting rooms
-- ⏰ Select date and time slots
-- ✅ Book rooms instantly
-- 📱 Clean and simple UI
-- 🔄 Real-time booking updates (if Firebase used)
-
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Flutter
 - Dart
-- Firebase (if used)
+- Firebase Auth
+- Cloud Firestore
 
----
+## Screenshots
 
-## 📸 Screenshots
+### Home Screen
+![Home Screen](assets/images/home_screen.png)
 
-![Home](assets/images/home.png)
-![Booking](assets/images/booking.png)
-![Confirm](assets/images/confirm.png)
+### Booking Success
+![Booking Success](assets/images/booking_success.png)
 
----
+### Profile Page
+![Profile Page](assets/images/profile_page.png)
 
-## 🎯 Project Goal
+## Project Use Case
 
-The goal of this project is to simplify meeting room booking in offices and organizations by providing a quick and easy mobile solution.
+This app is suitable for:
+- offices
+- coworking spaces
+- institutions
+- admin booking systems
 
----
+## Live Skills Demonstrated
 
-## 🔮 Future Improvements
+- Flutter UI design
+- Firebase integration
+- authentication flow
+- real-time database usage
+- responsive layout building
 
-- Admin panel for managing rooms
-- Push notifications
-- Booking history
-- User authentication
+## Freelance Availability
 
----
+I am available for freelance Flutter app projects, booking systems, admin apps, and business mobile apps.
 
-## 👩‍💻 Developed By
+## Connect with me
 
-Nethra – Flutter & FlutterFlow Developer
+**LinkedIn:** https://www.linkedin.com/in/nethra-nekar-ab2494259/  
+**Fiverr:** https://www.fiverr.com/users/nethranekar22/seller_dashboard
+
+## Author
+
+Nethra Nekar
 - Admin can still manage bookings from user interface
 - Logout button in top-right corner
 
